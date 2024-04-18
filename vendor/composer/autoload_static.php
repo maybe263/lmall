@@ -4,21 +4,29 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9103ae9afcc4720d343f8f755cbf3b1d
+class ComposerStaticInit020915b87d4ab8ac8119337ca936e79b
 {
     public static $files = array (
         '9b552a3cc426e3287cc811caefa3cf53' => __DIR__ . '/..' . '/topthink/think-helper/src/helper.php',
         '35fab96057f1bf5e7aba31a8a6d5fdde' => __DIR__ . '/..' . '/topthink/think-orm/stubs/load_stubs.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         't' => 
         array (
+            'think\\trace\\' => 12,
             'think\\' => 6,
         ),
         'a' => 
         array (
             'app\\' => 4,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\VarDumper\\' => 28,
         ),
         'P' => 
         array (
@@ -35,16 +43,28 @@ class ComposerStaticInit9103ae9afcc4720d343f8f755cbf3b1d
     );
 
     public static $prefixDirsPsr4 = array (
+        'think\\trace\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/topthink/think-trace/src',
+        ),
         'think\\' => 
         array (
-            0 => __DIR__ . '/..' . '/topthink/think-filesystem/src',
-            1 => __DIR__ . '/..' . '/topthink/think-helper/src',
+            0 => __DIR__ . '/..' . '/topthink/think-helper/src',
+            1 => __DIR__ . '/..' . '/topthink/think-filesystem/src',
             2 => __DIR__ . '/..' . '/topthink/think-orm/src',
             3 => __DIR__ . '/..' . '/topthink/framework/src/think',
         ),
         'app\\' => 
         array (
-            0 => __DIR__ . '/..' . '/topthink/think/app',
+            0 => __DIR__ . '/../..' . '/app',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -73,7 +93,7 @@ class ComposerStaticInit9103ae9afcc4720d343f8f755cbf3b1d
     );
 
     public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/..' . '/topthink/think/extend',
+        0 => __DIR__ . '/../..' . '/extend',
     );
 
     public static $classMap = array (
@@ -83,10 +103,10 @@ class ComposerStaticInit9103ae9afcc4720d343f8f755cbf3b1d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9103ae9afcc4720d343f8f755cbf3b1d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9103ae9afcc4720d343f8f755cbf3b1d::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit9103ae9afcc4720d343f8f755cbf3b1d::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit9103ae9afcc4720d343f8f755cbf3b1d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit020915b87d4ab8ac8119337ca936e79b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit020915b87d4ab8ac8119337ca936e79b::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit020915b87d4ab8ac8119337ca936e79b::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInit020915b87d4ab8ac8119337ca936e79b::$classMap;
 
         }, null, ClassLoader::class);
     }
