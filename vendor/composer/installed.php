@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'topthink/think',
-        'pretty_version' => 'v8.0.0',
-        'version' => '8.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'b5345d32215ac5b0f9d8e58ed916510637548350',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -92,9 +92,9 @@
             'dev_requirement' => false,
         ),
         'topthink/think' => array(
-            'pretty_version' => 'v8.0.0',
-            'version' => '8.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'b5345d32215ac5b0f9d8e58ed916510637548350',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -127,6 +127,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'topthink/think-template' => array(
+            'pretty_version' => 'v3.0.0',
+            'version' => '3.0.0.0',
+            'reference' => '4352d2cf627abfb8b49f830686c25c02f59c23f2',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../topthink/think-template',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'topthink/think-trace' => array(
             'pretty_version' => 'v1.6',
             'version' => '1.6.0.0',
@@ -135,6 +144,15 @@
             'install_path' => __DIR__ . '/../topthink/think-trace',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'topthink/think-view' => array(
+            'pretty_version' => 'v2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => 'd2a076011c96d2edd8016703a827fb54b2683c62',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../topthink/think-view',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
     ),
 );

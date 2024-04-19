@@ -7,4 +7,7 @@ return [
     // \think\middleware\LoadLangPack::class,
     // Session初始化
     // \think\middleware\SessionInit::class
+
+    //开启Session
+    '\think\middleware\SessionInit'
 ];
